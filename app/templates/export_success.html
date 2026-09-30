@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export Complete — ComicCraft</title>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <main class="success-wrap">
+    <section class="card success-card">
+      <div class="success-icon">✓</div>
+      <div class="badge">EXPORT COMPLETE</div>
+      <h1>Your Comic Is Ready!</h1>
+      <p>Your ComicCraft PDF has been generated successfully{% if filename %}: <strong>{{ filename }}</strong>{% endif %}.</p>
+      {% if filename %}<a class="primary" href="/download/{{ filename }}">Download PDF Again</a>{% endif %}
+      <a class="secondary" href="/">✨ Go Create Another Comic</a>
+    </section>
+  </main>
+</body>
+</html>
